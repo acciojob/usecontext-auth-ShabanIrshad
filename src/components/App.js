@@ -22,7 +22,7 @@ function Auth(){
   const auth=useContext(AuthContext);
   return(
     <>
-      {auth?<p className="authText">You are now authenticated,you can proceed.</p>:<p className="authText">You are not authenticated.</p>}
+      {auth?<p className="authText">You are now authenticated, you can proceed</p>:<p className="authText">you are not authenticated</p>}
     </>
   );
 }
