@@ -20,10 +20,9 @@ const App = () => {
 
 function Auth(){
   const auth=useContext(AuthContext);
-  console.log(auth);
   return(
     <>
-      {auth?'You are now authenticated,you can proceed.':'You are not authenticated.'}
+      {auth?<p className="authText">You are now authenticated,you can proceed.</p>:<p className="authText">You are not authenticated.</p>}
     </>
   );
 }
